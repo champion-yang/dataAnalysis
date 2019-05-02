@@ -1,0 +1,17 @@
+题目要求以及完成情况：
+
+1.从指定招聘网站爬取数据，提取有效数据，并保存为json格式文件。  
+          完成情况：bossZhipin
+	利用scrapy框架将boss直聘的相关信息爬取下来，保存为bossData.json文件.代码查看bossZhipin文件夹
+
+2.设置post请求参数并将信息返回给变量response
+          完成情况：postReq.py
+	使用了resquests，json包，将请求头，请求信息，请求地址传入到resquests请求中，注意请求方式
+
+3.将提取出来的数据转化为json格式，并赋值变量
+          完成情况：dataToJson.py
+	使用了json，resquests，BeautifulSoup，爬取笔趣网小说狂神，拿到了每一章的标题和对应的链接，并转化为json格式，赋值给变量jsonObj
+
+4.用with函数创建json文件，通过json方法，写入json数据
+            完成情况：withFunBuildJson.py
+	使用3中拿到的json数据，通过encode()编码为二进制文件，写入build.json文件中
