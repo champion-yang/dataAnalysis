@@ -1,0 +1,10 @@
+
+功能：简单使用requests实现拉勾网 关于python 职位的爬虫 并且将信息保存 
+
+遇到问题：{"status":false,"msg":"您操作太频繁,请稍后再访问","clientIp":"218.26.54.81","state":2402}
+
+问题解决办法：解决post和相关的cookie 
+
+难点：requeses.Session的使用以及请求信息分析，scv表格文件导出失败
+
+完成情况：暂时完成一页数据的爬取，成功保存至LaGou2.txt 文件中
